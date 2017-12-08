@@ -1,15 +1,21 @@
 import log from 'electron-log';
 
-const ping = () => {
-  log.debug('ping');
+const execute = (payload) => {
+  const { command } = payload;
 
-  return { msg: 'pong' };
+  switch (command) {
+    case 'ping':
+      return { msg: 'pong' };
+    default:
+      log.error('Unknown command');
+      return { error: 'unknown_command' };
+  }
 };
 
 const setup = (options, imports, register) => {
   register(null, {
     debug: {
-      ping,
+      execute,
     },
   });
 
