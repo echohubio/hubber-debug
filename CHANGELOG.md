@@ -2,6 +2,10 @@
 
 ## 1.0.0 (2017-12-08)
 
+* Update modules (@johnf)
+
+## 1.0.0 (2017-12-08)
+
 * Fix API and update modules (@johnf)
 
 ## 0.0.2 (2017-10-01)
