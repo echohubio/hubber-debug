@@ -10,16 +10,16 @@
   "devDependencies": {
     "babel-core": "^6.22.1",
     "babel-loader": "^7.1.1",
-    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-minify-webpack-plugin": "^0.2.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
     "eslint": "^4.12.1",
-    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-airbnb-base": "^12.1.0",
     "eslint-loader": "^1.9.0",
     "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-react": "^7.5.1",
-    "json-loader": "^0.5.4",
     "webpack": "^3.10.0",
+    "webpack-monitor": "^1.0.14",
     "webpack-node-externals": "^1.5.4"
   },
   "homepage": "https://github.com/echohubio/hubber-debug#readme",
@@ -45,7 +45,7 @@
     "url": "echohubio/hubber-debug"
   },
   "scripts": {
-    "build": "webpack -p",
+    "build": "webpack",
     "lint": "eslint .",
     "postversion": "git push",
     "prepublish": "yarn run build",
