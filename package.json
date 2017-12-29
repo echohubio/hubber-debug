@@ -1,7 +1,7 @@
 {
   "author": "John Ferlito <johnf@inodes.org> (http://inodes.org)",
   "bugs": {
-    "url": "https://github.com/echohubio/hubber-debu/issues"
+    "url": "https://github.com/echohubio/hubber-debug/issues"
   },
   "dependencies": {
     "electron-log": "^2.2.11"
